@@ -36,3 +36,7 @@
 
 Буторин Даниил
 
+## 4. Блог разработчика
+
+[Telegram канал](https://t.me/ResistorNominalCalculator)
+
