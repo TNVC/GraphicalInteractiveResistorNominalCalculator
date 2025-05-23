@@ -1,0 +1,52 @@
+\documentclass[a3paper]{article}
+\usepackage[margin=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{qrcode}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage[russian]{babel}
+\pagestyle{empty}
+
+\titleformat{\section}{\Large\bfseries}{}{0em}{}
+\titleformat{\subsection}{\large\bfseries}{}{0em}{}
+
+\begin{document}
+
+\begin{center}
+  {\Huge \textbf{Калькулятор номинала резистора графический интерактивный}} \\[1em]
+  {\LARGE ПЦП 2025} \\[1em]
+  {\Large Буторин Даниил, Б01-305} \\[2em]
+\end{center}
+
+\section*{Цель проекта}
+Быстрое и наглядное определение номинала резистора по цветовой маркировке.
+
+\section*{Принцип работы}
+Пользователь с помощью кнопок выбирает цвета полос на резисторе. На экране отображается рассчитанное сопротивление с учетом допуска. Поддерживаются резисторы с 4 и 5 кольцами.
+
+\section*{Комплектующие}
+\begin{itemize}
+  \item Микроконтроллер ESP32-WROOM
+  \item TFT-дисплей ST7735 1.44"
+  \item 4 кнопки для выбора цветов
+  \item 1 кнопка для выбора количества колец
+  \item Корпус из уплотнённой бумаги
+  \item Шнур питания USB
+\end{itemize}
+
+\section*{Используемые технологии}
+\begin{itemize}
+  \item Arduino IDE
+  \item SPI
+  \item Библиотека Adafruit GFX
+\end{itemize}
+
+\section*{Фотография устройства}
+\includegraphics[width=0.4\textwidth]{img2.jpg}
+
+\section*{QR-код на репозиторий GitHub}
+\qrcode{https://github.com/TNVC/GraphicalInteractiveResistorNominalCalculator}
+
+\end{document}
+
